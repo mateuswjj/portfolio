@@ -10,31 +10,31 @@ function App() {
   const itens = [
     {
       name: "card 1",
-      image_url: "x",
+      image_url: "src/assets/bisao.png",
       message: "x",
       link: "x"
     },
     {
       name: "card 2",
-      image_url: "x",
+      image_url: "src/assets/bisao.png",
       message: "x",
       link: "x"
     },
     {
       name: "card 3",
-      image_url: "x",
+      image_url: "src/assets/bisao.png",
       message: "x",
       link: "x"
     },
     {
       name: "card 4",
-      image_url: "x",
+      image_url: "src/assets/bisao.png",
       message: "x",
       link: "x"
     },
     {
       name: "card 5",
-      image_url: "x",
+      image_url: "src/assets/bisao.png",
       message: "x",
       link: "x"
     }
@@ -45,9 +45,9 @@ function App() {
       <div>
         <Title></Title>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
-          {itens.map((user) => (
+          {itens.map((item) => (
             <Grid item>
-              <MultiActionAreaCard></MultiActionAreaCard>
+              <MultiActionAreaCard content={item}></MultiActionAreaCard>
             </Grid>
           ))}
 
